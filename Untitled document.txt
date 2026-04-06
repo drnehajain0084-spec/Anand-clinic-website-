@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anand Child Clinic and Dental Care</title>
+
+
+<style>
+body {margin:0; font-family:Arial; background:#f5f9fc;}
+
+
+header {background:#0a74da; color:white; padding:20px; text-align:center;}
+
+
+nav {background:#055bb5; padding:10px; text-align:center;}
+nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+
+
+.hero {
+padding:60px;
+text-align:center;
+background:linear-gradient(to right, #0a74da, #4fc3f7);
+color:white;
+}
+
+
+.services, .testimonials, .gallery {
+padding:40px;
+text-align:center;
+}
+
+
+.service-box, .testimonial-box {
+display:inline-block;
+width:250px;
+margin:15px;
+padding:20px;
+background:white;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+border-radius:10px;
+}
+
+
+.gallery img {
+width:200px;
+margin:10px;
+border-radius:10px;
+}
+
+
+.booking {
+padding:40px;
+background:#ffffff;
+text-align:center;
+}
+
+
+input, textarea {
+width:80%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+
+button {
+background:#0a74da;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+
+
+footer {
+background:#033d73;
+color:white;
+text-align:center;
+padding:15px;
+}
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+<h1>Anand Child Clinic and Dental Care</h1>
+<p>Healthy Smile, Happy Life</p>
+</header>
+
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
+<section class="hero">
+<h1>Best Dental & Child Care in Jaipur 🦷👶</h1>
+<p>Painless, Advanced & Trusted Treatment</p>
+</section>
+
+
+<section id="services" class="services">
+<h2>Our Services</h2>
+
+
+<div class="service-box"><h3>Teeth Cleaning</h3></div>
+<div class="service-box"><h3>Root Canal</h3></div>
+<div class="service-box"><h3>Child Care</h3></div>
+
+
+</section>
+
+
+<section id="gallery" class="gallery">
+<h2>Our Clinic</h2>
+
+
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
+<img src="https://via.placeholder.com/200">
+
+
+</section>
+
+
+<section class="testimonials">
+<h2>Patient Reviews ⭐</h2>
+
+
+<div class="testimonial-box">“Very gentle treatment!”</div>
+<div class="testimonial-box">“Best clinic in Jaipur”</div>
+
+
+</section>
+
+
+<section id="booking" class="booking">
+<h2>Book Appointment</h2>
+
+
+<form onsubmit="sendWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Your Name" required><br>
+<input type="tel" id="phone" placeholder="Phone Number" required><br>
+<textarea id="problem" placeholder="Your Problem"></textarea><br>
+<button type="submit">Book via WhatsApp</button>
+</form>
+
+
+</section>
+
+
+<section id="contact" style="padding:30px; text-align:center;">
+<h2>Find Us</h2>
+
+
+<iframe src="https://www.google.com/maps?q=Jaipur&output=embed"
+width="90%" height="300" style="border:0;"></iframe>
+
+
+<p>📍 Jaipur, Rajasthan</p>
+<p>📞 9413842066</p>
+</section>
+
+
+<a class="whatsapp" href="https://wa.me/919413842066">💬</a>
+
+
+<footer>
+<p>© 2026 Anand Child Clinic and Dental Care</p>
+</footer>
+
+
+<script>
+function sendWhatsApp(){
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let problem = document.getElementById("problem").value;
+
+
+let message = `Appointment Request:%0AName: ${name}%0APhone: ${phone}%0AProblem: ${problem}`;
+
+
+window.open(`https://wa.me/919413842066?text=${message}`, "_blank");
+}
+</script>
+
+
+</body>
+</html>
